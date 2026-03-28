@@ -1,50 +1,32 @@
-# Restaurante Sabor & Sabores 🍕🥤🍔
+# 🍕 Sistema de Gerenciamento de Pedidos - Restaurante
 
-## Descrição
-O **Restaurante BomSabor** é um sistema de gerenciamento de pedidos desenvolvido em **Java**, utilizando **Orientação a Objetos**.  
-O software permite registrar pedidos, remover pedidos existentes e listar todos os pedidos ativos de forma organizada, tudo via console.  
-
-O sistema foi implementado como atividade acadêmica e demonstra conceitos fundamentais de:
-- Classes e Objetos (`Pedido` e `Item`)  
-- Composição (`Pedido` contém uma lista de `Item`)  
-- Estruturas de dados (`ArrayList`)  
-- Controle de fluxo (`switch-case` e `while`)  
-- Interação com o usuário via console (`Scanner`)  
+Projeto acadêmico desenvolvido em Java com foco em Programação Orientada a Objetos (POO).  
+Aluno: Jhonatan Thiago  
 
 ---
 
-## Funcionalidades
+## 📌 Sobre o Projeto
 
-1. **Registrar Pedido**
-   - Solicita o nome do cliente.
-   - Gera um número de pedido automaticamente (sequencial).
-   - Permite adicionar um ou mais itens ao pedido, solicitando nome e preço.
-   - Calcula o valor total do pedido.
-   - Exibe um resumo completo do pedido.
+Este projeto consiste em um sistema de gerenciamento de pedidos para restaurante, desenvolvido em Java para execução via console.
 
-2. **Remover Pedido**
-   - Permite remover um pedido pelo número.
-   - Exibe mensagem de erro caso o pedido não exista.
+A aplicação permite registrar, remover e listar pedidos de forma organizada, aplicando conceitos fundamentais de desenvolvimento back-end e lógica de programação.
 
-3. **Listar Pedidos**
-   - Lista todos os pedidos registrados.
-   - Mostra informações detalhadas: número do pedido, nome do cliente, itens com preço e valor total.
-   - Lista ordenada pelo número do pedido.
-
-4. **Sair**
-   - Encerra o programa.
+O sistema foi estruturado utilizando boas práticas de orientação a objetos, facilitando manutenção e evolução futura.
 
 ---
 
-## Requisitos
+## 🚀 Funcionalidades
 
-- **Java JDK 24** ou superior instalado.  
-- **IDE Eclipse** (ou qualquer outra IDE Java).  
-- Conhecimento básico de terminal/console para interação com o programa.  
+- Registrar pedidos com múltiplos itens  
+- Gerar número de pedido automaticamente  
+- Calcular valor total do pedido  
+- Remover pedidos pelo número  
+- Listar todos os pedidos cadastrados  
+- Exibir detalhes completos (cliente, itens e valores)  
 
 ---
 
-## Estrutura de Arquivos
+## 🧱 Estrutura do Projeto
 
 ```
 
@@ -54,73 +36,91 @@ RestauranteApp/
 ├─ Item.java
 ├─ Pedido.java
 └─ Restaurante.java
-README.md
+
+```
+
+### 🔹 Item
+Representa um item do pedido (nome e preço).
+
+### 🔹 Pedido
+Contém os dados do pedido, incluindo cliente, lista de itens e valor total.
+
+### 🔹 Restaurante
+Classe principal responsável pelo controle do sistema e interação com o usuário.
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- Java  
+- Programação Orientada a Objetos (POO)  
+- ArrayList  
+- Scanner (entrada de dados via console)  
+
+---
+
+## 🧠 Conceitos Aplicados
+
+- Classes e Objetos  
+- Composição (Pedido contém múltiplos itens)  
+- Estruturas de dados (ArrayList)  
+- Controle de fluxo (switch-case, loops)  
+- Organização de código e separação de responsabilidades  
+
+---
+
+## ▶️ Como Executar o Projeto
+
+### 🔧 Requisitos
+
+- Java JDK 24 ou superior  
+- IDE (Eclipse, IntelliJ ou VS Code)
+
+### ▶️ Execução
+
+1. Importe o projeto na sua IDE  
+2. Compile o projeto  
+3. Execute a classe principal:
+
+```
+
+Restaurante.java
 
 ```
 
 ---
 
-## Como Rodar o Projeto
-
-1. Abra o **Eclipse** e importe o projeto:
-   - `File > Import > Existing Projects into Workspace`  
-   - Selecione a pasta do projeto `RestauranteApp`  
-   - Finish  
-
-2. Certifique-se de que o **JDK 24** está configurado no Eclipse:
-   - `Project > Properties > Java Build Path > Libraries`  
-   - Adicione o JDK 24 se não estiver presente  
-
-3. Compile e execute a classe principal:
-   - Clique com o direito em `Restaurante.java > Run As > Java Application`  
-
-4. Interaja com o menu:
-   - **1** → Registrar pedido  
-   - **2** → Remover pedido  
-   - **3** → Listar pedidos  
-   - **4** → Sair do programa  
-
-5. Para registrar itens em um pedido:
-   - Digite o nome do item e o preço.  
-   - Quando terminar, digite `fim` para encerrar a adição de itens.  
-
----
-
-## Exemplo de Uso
+## 💻 Exemplo de Uso
 
 ```
 
-\=== MENU ===
+=== MENU ===
 
 1. Registrar pedido
 2. Remover pedido
 3. Listar pedidos
 4. Sair
-   Escolha uma opção: 1
-
-Nome do cliente: Ana
-Nome do item (ou 'fim' para encerrar): Pizza
-Preço do item: 40.00
-Nome do item (ou 'fim' para encerrar): Suco
-Preço do item: 7.50
-Nome do item (ou 'fim' para encerrar): fim
-
-Pedido registrado com sucesso!
-Pedido nº 1 - Cliente: Ana
-Pizza - R\$ 40.00
-Suco - R\$ 7.50
-Total: R\$ 47.50
 
 ```
 
 ---
 
-## Autor
-- **Jhonatan Thiago**
+## 📈 Possíveis Melhorias
+
+- Persistência de dados em arquivo ou banco de dados  
+- Interface gráfica (GUI)  
+- Integração com API REST  
+- Validação de dados mais robusta  
 
 ---
 
-## Observações
-- Este projeto é uma aplicação de console e não possui interface gráfica.  
-- Pode ser expandido futuramente para incluir persistência em arquivos ou banco de dados.  
-- Foi desenvolvido para fins acadêmicos, demonstrando conceitos de Java e Orientação a Objetos.
+## 📄 Observação
+
+Projeto acadêmico desenvolvido com foco na prática de conceitos fundamentais de Java e Programação Orientada a Objetos, simulando um sistema simples de gerenciamento de pedidos.
+
+---
+
+## 👨‍💻 Autor
+
+Jhonatan Thiago  
+https://github.com/jhonatanthiago
